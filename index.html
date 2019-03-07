@@ -14,6 +14,16 @@
         // Initialize the SideNav
         $(document).ready(function () {
             $('.sidenav').sidenav();
+            $('.pushpin').pushpin();
+        });
+
+        $('.pushpin-demo-nav').each(function() {
+            var $this = $(this);
+            var $target = $('#' + $(this).attr('data-target'));
+            $this.pushpin({
+                top: $target.offset().top,
+                bottom: $target.offset().top + $target.outerHeight() - $this.height()
+            });
         });
     </script>
     <style>
@@ -25,23 +35,53 @@
             height: 40px;
             width: 40px;
         }
+
+        .pin-top {
+            position: relative;
+        }
+
+        .pin-bottom {
+            position: relative;
+        }
+
+        .pinned {
+            position: fixed !important;
+        }
     </style>
 </head>
 
 <body>
     <!-- Begin Navigation Content -->
+    <div class="blue">
     <nav class="nav-fixed blue darken-2">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
                 <img class="brand-logo" src="Images/Quaid-Logo-Square.png" alt="Quaid Logo" style="height: 100%;">
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#prof"><i class="material-icons left">assignment_ind</i>Profile</a></li>
-                <li><a href="#exp"><i class="material-icons left">assignment</i>Experience</a></li>
-                <li><a href="#tech"><i class="material-icons left">code</i>Technology</a></li>
-                <li><a href="#edu"><i class="material-icons left">book</i>Education</a></li>
-                <li><a href="#conn"><i class="material-icons left">share</i>Connect</a></li>
+                <li>
+                    <a href="#prof">
+                        <i class="material-icons left">assignment_ind</i>Profile</a>
+                </li>
+                <li>
+                    <a href="#exp">
+                        <i class="material-icons left">assignment</i>Experience</a>
+                </li>
+                <li>
+                    <a href="#tech">
+                        <i class="material-icons left">code</i>Technology</a>
+                </li>
+                <li>
+                    <a href="#edu">
+                        <i class="material-icons left">book</i>Education</a>
+                </li>
+                <li>
+                    <a href="#conn">
+                        <i class="material-icons left">share</i>Connect</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -49,17 +89,39 @@
     <ul class="sidenav" id="mobile-demo">
         <li>
             <div class="user-view">
-                <a href="#user"><img class="circle" src="Images/Quaid-Logo-Square.png"></a>
-                <a href="#name"><span class="black-text name">Quaid DeLacluyse</span></a>
-                <a href="mailto:delaclqm@miamioh.edu"><span class="black-text email">delaclqm@miamioh.edu</span></a>
+                <a href="#user">
+                    <img class="circle" src="Images/Quaid-Logo-Square.png">
+                </a>
+                <a href="#name">
+                    <span class="black-text name">Quaid DeLacluyse</span>
+                </a>
+                <a href="mailto:delaclqm@miamioh.edu">
+                    <span class="black-text email">delaclqm@miamioh.edu</span>
+                </a>
             </div>
         </li>
-        <li><a class="sidenav-close" href="#prof"><i class="material-icons left">assignment_ind</i>Profile</a></li>
-        <li><a class="sidenav-close" href="#exp"><i class="material-icons left">assignment</i>Experience</a></li>
-        <li><a class="sidenav-close" href="#tech"><i class="material-icons left">code</i>Technology</a></li>
-        <li><a class="sidenav-close" href="#edu"><i class="material-icons left">book</i>Education</a></li>
-        <li><a class="sidenav-close" href="#conn"><i class="material-icons left">share</i>Connect</a></li>
+        <li>
+            <a class="sidenav-close" href="#prof">
+                <i class="material-icons left">assignment_ind</i>Profile</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#exp">
+                <i class="material-icons left">assignment</i>Experience</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#tech">
+                <i class="material-icons left">code</i>Technology</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#edu">
+                <i class="material-icons left">book</i>Education</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#conn">
+                <i class="material-icons left">share</i>Connect</a>
+        </li>
     </ul>
+</div>
     <!-- Begin Navigation Content -->
 
     <!-- Begin Main Content -->
@@ -76,10 +138,13 @@
             </div>
             <div class="col s12 m8">
                 <h3>Quaid Michael DeLacluyse</h3>
-                <blockquote class="flow-text"><strong>Email:</strong> delaclqm@miamioh.edu</blockquote>
-                <blockquote class="flow-text"><strong>Cell:</strong> (224) 600-4622</blockquote>
-                <blockquote class="flow-text"><strong>Current Position:</strong> Business Intelligence Developer and
-                    Student</blockquote>
+                <blockquote class="flow-text">
+                    <strong>Email:</strong> delaclqm@miamioh.edu</blockquote>
+                <blockquote class="flow-text">
+                    <strong>Cell:</strong> (224) 600-4622</blockquote>
+                <blockquote class="flow-text">
+                    <strong>Current Position:</strong> Business Intelligence Developer and Student
+                </blockquote>
             </div>
             <!-- Anchor for next section -->
             <a id="exp"></a>
@@ -94,7 +159,7 @@
         </div>
         <div class="row flow-text">
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto unde, magnam aliquam velit rerum vero ullam repellat 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto unde, magnam aliquam velit rerum vero ullam repellat
                 animi tempore molestiae voluptates iusto atque iure fugit doloremque. Et, modi eos.
             </p>
             <!-- Anchor for next section -->
@@ -110,8 +175,8 @@
         </div>
         <div class="row flow-text">
             <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ratione consectetur unde animi rem, sequi minima, eligendi 
-            quia dolorum cupiditate id quidem reprehenderit doloremque tempore repellat provident ut temporibus praesentium.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ratione consectetur unde animi rem, sequi minima, eligendi
+                quia dolorum cupiditate id quidem reprehenderit doloremque tempore repellat provident ut temporibus praesentium.
             </p>
             <!-- Anchor for next section -->
             <a id="edu"></a>
@@ -126,9 +191,9 @@
         </div>
         <div class="row flow-text">
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis? Laudantium earum obcaecati 
-                autem architecto enim modi aut sunt, 
-                repellendus est inventore voluptatum aperiam, provident, non reprehenderit voluptates itaque at!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis? Laudantium earum obcaecati autem architecto
+                enim modi aut sunt, repellendus est inventore voluptatum aperiam, provident, non reprehenderit voluptates
+                itaque at!
             </p>
             <!-- Anchor for next section -->
             <a id="conn"></a>
@@ -205,7 +270,9 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                        </li>
                     </ul>
                 </div>
             </div>
