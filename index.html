@@ -16,15 +16,6 @@
             $('.sidenav').sidenav();
             $('.pushpin').pushpin();
         });
-
-        $('.pushpin-demo-nav').each(function() {
-            var $this = $(this);
-            var $target = $('#' + $(this).attr('data-target'));
-            $this.pushpin({
-                top: $target.offset().top,
-                bottom: $target.offset().top + $target.outerHeight() - $this.height()
-            });
-        });
     </script>
     <style>
         blockquote {
@@ -36,23 +27,15 @@
             width: 40px;
         }
 
-        .pin-top {
-            position: relative;
-        }
-
-        .pin-bottom {
-            position: relative;
-        }
-
-        .pinned {
-            position: fixed !important;
+        img.icon {
+            max-height: 80px;
+            max-width: 80px;
         }
     </style>
 </head>
 
 <body>
     <!-- Begin Navigation Content -->
-    <div class="blue">
     <nav class="nav-fixed blue darken-2">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">
@@ -121,7 +104,6 @@
                 <i class="material-icons left">share</i>Connect</a>
         </li>
     </ul>
-</div>
     <!-- Begin Navigation Content -->
 
     <!-- Begin Main Content -->
@@ -152,14 +134,15 @@
     </div>
     <!-- End Profile Section -->
 
-    <!-- Begin Eperience Section -->
+    <!-- Begin Experience Section -->
     <div class="container green lighten-5">
         <div class="card-panel green darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
             <h3 class="center-align">Experience</h3>
         </div>
         <div class="row flow-text">
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto unde, magnam aliquam velit rerum vero ullam repellat
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto unde, magnam aliquam velit
+                rerum vero ullam repellat
                 animi tempore molestiae voluptates iusto atque iure fugit doloremque. Et, modi eos.
             </p>
             <!-- Anchor for next section -->
@@ -174,13 +157,77 @@
             <h3 class="center-align">Technology</h3>
         </div>
         <div class="row flow-text">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ratione consectetur unde animi rem, sequi minima, eligendi
-                quia dolorum cupiditate id quidem reprehenderit doloremque tempore repellat provident ut temporibus praesentium.
-            </p>
-            <!-- Anchor for next section -->
-            <a id="edu"></a>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework" class="icon responsive-img">
+                <p>Bootstrap CSS Framework</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
+                <p>C# Language</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/css3/css3-original.svg" alt="CSS3" class="icon responsive-img">
+                <p>Cascading Style Sheets</p>
+            </div>
         </div>
+        <div class="row flow-text">
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework" class="icon responsive-img">
+                <p>Bootstrap CSS Framework</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
+                <p>C# Language</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/css3/css3-original.svg" alt="CSS3" class="icon responsive-img">
+                <p>Cascading Style Sheets</p>
+            </div>
+        </div>
+        <div class="row flow-text">
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework" class="icon responsive-img">
+                <p>Bootstrap CSS Framework</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
+                <p>C# Language</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/css3/css3-original.svg" alt="CSS3" class="icon responsive-img">
+                <p>Cascading Style Sheets</p>
+            </div>
+        </div>
+        <div class="row flow-text">
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework" class="icon responsive-img">
+                <p>Bootstrap CSS Framework</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
+                <p>C# Language</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/css3/css3-original.svg" alt="CSS3" class="icon responsive-img">
+                <p>Cascading Style Sheets</p>
+            </div>
+        </div>
+        <div class="row flow-text">
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework" class="icon responsive-img">
+                <p>Bootstrap CSS Framework</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
+                <p>C# Language</p>
+            </div>
+            <div class="col s12 m6 l4 center-align">
+                <img src="Images/devicon-master/icons/css3/css3-original.svg" alt="CSS3" class="icon responsive-img">
+                <p>Cascading Style Sheets</p>
+            </div>
+        </div>
+        <!-- Anchor for next section -->
+        <a id="edu"></a>
     </div>
     <!-- End Technology Section-->
 
@@ -191,8 +238,10 @@
         </div>
         <div class="row flow-text">
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis? Laudantium earum obcaecati autem architecto
-                enim modi aut sunt, repellendus est inventore voluptatum aperiam, provident, non reprehenderit voluptates
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis? Laudantium earum
+                obcaecati autem architecto
+                enim modi aut sunt, repellendus est inventore voluptatum aperiam, provident, non reprehenderit
+                voluptates
                 itaque at!
             </p>
             <!-- Anchor for next section -->
