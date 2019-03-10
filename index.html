@@ -16,14 +16,7 @@
             $('.sidenav').sidenav();
         });
 
-        // Initialize the ScrollReveal
-        let slideLeft = {
-            distance: '150%',
-            origin: 'right',
-            opacity: null
-        };
 
-        ScrollReveal().reveal('.container', slideLeft);
     </script>
     <style>
         blockquote {
@@ -116,7 +109,7 @@
 
     <!-- Begin Main Content -->
     <div id="main">
-        
+
         <!-- Begin Profile Section -->
         <div class="container blue lighten-5">
             <a id="prof"></a>
@@ -142,7 +135,7 @@
             </div>
         </div>
         <!-- End Profile Section -->
-    
+
         <!-- Begin Experience Section -->
         <div class="container green lighten-5">
             <div class="card-panel green darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
@@ -150,7 +143,8 @@
             </div>
             <div class="row flow-text">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto unde, magnam aliquam velit
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto unde, magnam aliquam
+                    velit
                     rerum vero ullam repellat
                     animi tempore molestiae voluptates iusto atque iure fugit doloremque. Et, modi eos.
                 </p>
@@ -159,7 +153,7 @@
             </div>
         </div>
         <!-- End Experience Section-->
-    
+
         <!-- Begin Technology Section -->
         <div class="container red lighten-5">
             <div class="card-panel red darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
@@ -184,7 +178,8 @@
                     <p>Java Language</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
-                    <img src="Images/icons/javascript/javascript-original.svg" alt="JavaScript" class="icon responsive-img">
+                    <img src="Images/icons/javascript/javascript-original.svg" alt="JavaScript"
+                        class="icon responsive-img">
                     <p>JavaScript Language</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
@@ -200,7 +195,7 @@
             <a id="edu"></a>
         </div>
         <!-- End Technology Section-->
-    
+
         <!-- Begin Education Section -->
         <div class="container yellow lighten-5">
             <div class="card-panel yellow darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
@@ -219,7 +214,7 @@
             </div>
         </div>
         <!-- End Education Section-->
-    
+
         <!-- Begin Connect Section -->
         <div class="container purple lighten-5">
             <div class="card-panel purple darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
@@ -305,10 +300,19 @@
     </footer>
     <!-- End Footer -->
 
-    <!-- Begin Materialize Scripts -->
-    <!--JavaScript at end of body for optimized loading-->
+    <!-- JavaScript at end of body for optimized loading -->
     <script type="text/javascript" src="Scripts/materialize.min.js"></script>
-    <!-- End Materialize Scripts -->
+    <!-- Scripts to Initialize the ScrollReveal Object-->
+    <script>
+        // Initialize the ScrollReveal
+        let slideLeft = {
+            distance: '150%',
+            origin: 'right',
+            opacity: null
+        };
+
+        ScrollReveal().reveal('.container', slideLeft);
+    </script>
 </body>
 
 </html>
