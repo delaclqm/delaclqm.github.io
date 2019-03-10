@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>Document</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //while(true) {
+                $('.logo-start').fadeIn(8000);
+                $('.logo-end').fadeIn(8000);
+                $('.logo-start').text('&nbsp;');
+
+                // $('.logo-start').fadeOut(8000);
+                // $('.logo-end').fadeOut(8000);
+
+                $('.logo-start').text('$');
+                $('.logo-end').fadeIn(8000);
+                // $('.logo-start').fadeOut(8000);
+                // $('.logo-end').fadeOut(8000);
+            //}
+        });
+    </script>
+</head>
+<body>
+    <h1><span class="logo"><span class="logo-start">&lt;</span>QD<span class="logo-end">&gt;</span></span></h1>
+</body>
+</html>
