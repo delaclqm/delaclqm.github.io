@@ -8,17 +8,37 @@
     <link rel="icon" sizes="32x32" href="favicon.ico">
     <meta name="theme-color" content="#2196f3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/JavaScript">
         // Initialize the SideNav
         $(document).ready(function () {
             $('.sidenav').sidenav();
         });
+
+        // Initialize the ScrollReveal
+        let slideLeft = {
+            distance: '150%',
+            origin: 'right',
+            opacity: null
+        };
+
+        ScrollReveal().reveal('.container', slideLeft);
     </script>
     <style>
-        blockquote {border-left: #0d47a1 5px solid;}
-        img.logo {height: 40px; width: 40px;}
-        img.icon {max-height: 80px; max-width: 80px;}
+        blockquote {
+            border-left: #0d47a1 5px solid;
+        }
+
+        img.logo {
+            height: 40px;
+            width: 40px;
+        }
+
+        img.icon {
+            max-height: 80px;
+            max-width: 80px;
+        }
     </style>
 </head>
 
@@ -95,164 +115,167 @@
     <!-- Begin Navigation Content -->
 
     <!-- Begin Main Content -->
-
-    <!-- Begin Profile Section -->
-    <div class="container blue lighten-5">
-        <a id="prof"></a>
-        <div class="card-panel blue darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
-            <h3 class="center-align">Profile</h3>
-        </div>
-        <div class="row">
-            <div class="col s6 offset-s3 m4">
-                <img src="Images/Quaid-Logo-Square.png" alt="Quaid Logo" style="width: 100%;">
+    <div id="main">
+        
+        <!-- Begin Profile Section -->
+        <div class="container blue lighten-5">
+            <a id="prof"></a>
+            <div class="card-panel blue darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
+                <h3 class="center-align">Profile</h3>
             </div>
-            <div class="col s12 m8">
-                <h3>Quaid Michael DeLacluyse</h3>
-                <blockquote class="flow-text">
-                    <strong>Email:</strong> delaclqm@miamioh.edu</blockquote>
-                <blockquote class="flow-text">
-                    <strong>Cell:</strong> (224) 600-4622</blockquote>
-                <blockquote class="flow-text">
-                    <strong>Current Position:</strong> Business Intelligence Developer and Student
-                </blockquote>
+            <div class="row">
+                <div class="col s6 offset-s3 m4">
+                    <img src="Images/Quaid-Logo-Square.png" alt="Quaid Logo" style="width: 100%;">
+                </div>
+                <div class="col s12 m8">
+                    <h3>Quaid Michael DeLacluyse</h3>
+                    <blockquote class="flow-text">
+                        <strong>Email:</strong> delaclqm@miamioh.edu</blockquote>
+                    <blockquote class="flow-text">
+                        <strong>Cell:</strong> (224) 600-4622</blockquote>
+                    <blockquote class="flow-text">
+                        <strong>Current Position:</strong> Business Intelligence Developer and Student
+                    </blockquote>
+                </div>
+                <!-- Anchor for next section -->
+                <a id="exp"></a>
+            </div>
+        </div>
+        <!-- End Profile Section -->
+    
+        <!-- Begin Experience Section -->
+        <div class="container green lighten-5">
+            <div class="card-panel green darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
+                <h3 class="center-align">Experience</h3>
+            </div>
+            <div class="row flow-text">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto unde, magnam aliquam velit
+                    rerum vero ullam repellat
+                    animi tempore molestiae voluptates iusto atque iure fugit doloremque. Et, modi eos.
+                </p>
+                <!-- Anchor for next section -->
+                <a id="tech"></a>
+            </div>
+        </div>
+        <!-- End Experience Section-->
+    
+        <!-- Begin Technology Section -->
+        <div class="container red lighten-5">
+            <div class="card-panel red darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
+                <h3 class="center-align">Technology</h3>
+            </div>
+            <div class="row flow-text">
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework"
+                        class="icon responsive-img">
+                    <p>Bootstrap CSS Framework</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
+                    <p>C# Language</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/css3/css3-original.svg" alt="CSS3" class="icon responsive-img">
+                    <p>Cascading Style Sheets</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/java/java-original.svg" alt="Java" class="icon responsive-img">
+                    <p>Java Language</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/javascript/javascript-original.svg" alt="JavaScript" class="icon responsive-img">
+                    <p>JavaScript Language</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/jquery/jquery-original.svg" alt="jQuery" class="icon responsive-img">
+                    <p>jQuery Language</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/nodejs/nodejs-original.svg" alt="Node.js" class="icon responsive-img">
+                    <p>Node.js</p>
+                </div>
             </div>
             <!-- Anchor for next section -->
-            <a id="exp"></a>
+            <a id="edu"></a>
         </div>
-    </div>
-    <!-- End Profile Section -->
+        <!-- End Technology Section-->
+    
+        <!-- Begin Education Section -->
+        <div class="container yellow lighten-5">
+            <div class="card-panel yellow darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
+                <h3 class="center-align">Education</h3>
+            </div>
+            <div class="row flow-text">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis? Laudantium earum
+                    obcaecati autem architecto
+                    enim modi aut sunt, repellendus est inventore voluptatum aperiam, provident, non reprehenderit
+                    voluptates
+                    itaque at!
+                </p>
+                <!-- Anchor for next section -->
+                <a id="conn"></a>
+            </div>
+        </div>
+        <!-- End Education Section-->
+    
+        <!-- Begin Connect Section -->
+        <div class="container purple lighten-5">
+            <div class="card-panel purple darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
+                <h3 class="center-align">Connect</h3>
+            </div>
+            <div class="row flow-text valign-wrapper">
+                <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
+                    <img src="Images/github-logo.png" alt="Github Logo" class="logo">
+                </div>
+                <div class="col s4 left-align">
+                    Github
+                </div>
+                <div class="col s4 left-align">
+                    <button class="btn waves-effect purple darken-2">Go to Profile</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row flow-text valign-wrapper">
+                <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
+                    <img src="Images/linkedin-logo.png" alt="LinkedIn Logo" class="logo">
+                </div>
+                <div class="col s4 left-align">
+                    LinkedIn
+                </div>
+                <div class="col s4 left-align">
+                    <button class="btn waves-effect purple darken-2">Go to Profile</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row flow-text valign-wrapper">
+                <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
+                    <img src="Images/instagram-logo.png" alt="Instagram Logo" class="logo">
+                </div>
+                <div class="col s4 left-align">
+                    Instagram
+                </div>
+                <div class="col s4 left-align">
+                    <button class="btn waves-effect purple darken-2">Go to Profile</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row flow-text valign-wrapper">
+                <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
+                    <img src="Images/twitter-logo.png" alt="Twitter Logo" class="logo">
+                </div>
+                <div class="col s4 left-align">
+                    Twitter
+                </div>
+                <div class="col s4 left-align">
+                    <button class="btn waves-effect purple darken-2">Go to Profile</button>
+                </div>
+            </div>
+        </div>
+        <!-- End Connect Section-->
 
-    <!-- Begin Experience Section -->
-    <div class="container green lighten-5">
-        <div class="card-panel green darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
-            <h3 class="center-align">Experience</h3>
-        </div>
-        <div class="row flow-text">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto unde, magnam aliquam velit
-                rerum vero ullam repellat
-                animi tempore molestiae voluptates iusto atque iure fugit doloremque. Et, modi eos.
-            </p>
-            <!-- Anchor for next section -->
-            <a id="tech"></a>
-        </div>
     </div>
-    <!-- End Experience Section-->
-
-    <!-- Begin Technology Section -->
-    <div class="container red lighten-5">
-        <div class="card-panel red darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
-            <h3 class="center-align">Technology</h3>
-        </div>
-        <div class="row flow-text">
-            <div class="col s12 m6 l4 center-align">
-                <img src="Images/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework" class="icon responsive-img">
-                <p>Bootstrap CSS Framework</p>
-            </div>
-            <div class="col s12 m6 l4 center-align">
-                <img src="Images/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
-                <p>C# Language</p>
-            </div>
-            <div class="col s12 m6 l4 center-align">
-                <img src="Images/icons/css3/css3-original.svg" alt="CSS3" class="icon responsive-img">
-                <p>Cascading Style Sheets</p>
-            </div>
-            <div class="col s12 m6 l4 center-align">
-                <img src="Images/icons/java/java-original.svg" alt="Java" class="icon responsive-img">
-                <p>Java Language</p>
-            </div>
-            <div class="col s12 m6 l4 center-align">
-                <img src="Images/icons/javascript/javascript-original.svg" alt="JavaScript" class="icon responsive-img">
-                <p>JavaScript Language</p>
-            </div>
-            <div class="col s12 m6 l4 center-align">
-                <img src="Images/icons/jquery/jquery-original.svg" alt="jQuery" class="icon responsive-img">
-                <p>jQuery Language</p>
-            </div>
-            <div class="col s12 m6 l4 center-align">
-                <img src="Images/icons/nodejs/nodejs-original.svg" alt="Node.js" class="icon responsive-img">
-                <p>Node.js</p>
-            </div>
-        </div>
-        <!-- Anchor for next section -->
-        <a id="edu"></a>
-    </div>
-    <!-- End Technology Section-->
-
-    <!-- Begin Education Section -->
-    <div class="container yellow lighten-5">
-        <div class="card-panel yellow darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
-            <h3 class="center-align">Education</h3>
-        </div>
-        <div class="row flow-text">
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis? Laudantium earum
-                obcaecati autem architecto
-                enim modi aut sunt, repellendus est inventore voluptatum aperiam, provident, non reprehenderit
-                voluptates
-                itaque at!
-            </p>
-            <!-- Anchor for next section -->
-            <a id="conn"></a>
-        </div>
-    </div>
-    <!-- End Education Section-->
-
-    <!-- Begin Connect Section -->
-    <div class="container purple lighten-5">
-        <div class="card-panel purple darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
-            <h3 class="center-align">Connect</h3>
-        </div>
-        <div class="row flow-text valign-wrapper">
-            <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
-                <img src="Images/github-logo.png" alt="Github Logo" class="logo">
-            </div>
-            <div class="col s4 left-align">
-                Github
-            </div>
-            <div class="col s4 left-align">
-                <button class="btn waves-effect purple darken-2">Go to Profile</button>
-            </div>
-        </div>
-        <hr>
-        <div class="row flow-text valign-wrapper">
-            <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
-                <img src="Images/linkedin-logo.png" alt="LinkedIn Logo" class="logo">
-            </div>
-            <div class="col s4 left-align">
-                LinkedIn
-            </div>
-            <div class="col s4 left-align">
-                <button class="btn waves-effect purple darken-2">Go to Profile</button>
-            </div>
-        </div>
-        <hr>
-        <div class="row flow-text valign-wrapper">
-            <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
-                <img src="Images/instagram-logo.png" alt="Instagram Logo" class="logo">
-            </div>
-            <div class="col s4 left-align">
-                Instagram
-            </div>
-            <div class="col s4 left-align">
-                <button class="btn waves-effect purple darken-2">Go to Profile</button>
-            </div>
-        </div>
-        <hr>
-        <div class="row flow-text valign-wrapper">
-            <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
-                <img src="Images/twitter-logo.png" alt="Twitter Logo" class="logo">
-            </div>
-            <div class="col s4 left-align">
-                Twitter
-            </div>
-            <div class="col s4 left-align">
-                <button class="btn waves-effect purple darken-2">Go to Profile</button>
-            </div>
-        </div>
-    </div>
-    <!-- End Connect Section-->
-
     <!-- End Main Content -->
 
     <!-- Begin Footer -->
