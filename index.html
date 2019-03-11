@@ -5,7 +5,7 @@
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="Content/materialize.min.css" media="screen,projection" />
-    <link rel="icon" sizes="800x800" href="Images/Quaid-logo.gif">
+    <link rel="icon" sizes="800x800" href="Images/quaid-logo.gif">
     <meta name="theme-color" content="#2196f3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -22,12 +22,21 @@
         }
 
         #edu-attr {
-            border-left: #ffc107  5px solid;
+            border-left: #ffc107 5px solid;
+        }
+
+        #exp-attr {
+            border-left: #388e3c 5px solid;
         }
 
         img.logo {
             height: 40px;
             width: 40px;
+        }
+
+        img.expLogo {
+            height: 100px;
+            width: 100px;
         }
 
         img.icon {
@@ -52,7 +61,7 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
                 </a>
-                <img class="brand-logo" src="Images/Quaid-logo.gif" alt="Quaid Logo" style="height: 100%;">
+                <img class="brand-logo" src="Images/quaid-logo.gif" alt="Quaid Logo" style="height: 100%;">
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
@@ -83,7 +92,7 @@
         <li>
             <div class="user-view">
                 <a href="#user">
-                    <img class="circle" src="Images/Quaid-Logo.gif" alt="Quaid Logo">
+                    <img class="circle" src="Images/quaid-logo.gif" alt="Quaid Logo">
                 </a>
                 <a href="#name">
                     <span class="black-text name">Quaid DeLacluyse</span>
@@ -127,7 +136,7 @@
             </div>
             <div class="row">
                 <div class="col s6 offset-s3 m4">
-                    <img src="Images/Quaid-Logo.gif" alt="Quaid Logo" style="width: 100%;">
+                    <img src="Images/quaid-logo.gif" alt="Quaid Logo" style="width: 100%;">
                 </div>
                 <div class="col s12 m8">
                     <h3>Quaid Michael DeLacluyse</h3>
@@ -150,53 +159,97 @@
             <div class="card-panel green darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
                 <h3 class="center-align">Experience</h3>
             </div>
-            <div class="row flow-text">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto unde, magnam aliquam
-                    velit
-                    rerum vero ullam repellat
-                    animi tempore molestiae voluptates iusto atque iure fugit doloremque. Et, modi eos.
-                </p>
-                <!-- Anchor for next section -->
-                <a id="tech"></a>
+            <div class="row">
+                <div class="col s12 m2 center-align">
+                    <img class="circle responsive-img logoExp" src="Images/lesman-logo.png"
+                        alt="Lesman Instrument Company">
+                </div>
+                <div class="col s12 m10">
+                    <blockquote id="exp-attr">
+                        <h5><strong>Lesman Instrument Company</strong></h5>
+                    </blockquote>
+                    <p class="flow-text">
+                        This is going to be some text about my experience that I have had within IT at Lesman
+                        Instrument.
+                    </p>
+                </div>
             </div>
+            <div class="row">
+                <div class="col s12 m2 center-align">
+                    <img class="circle responsive-img logoExp" src="Images/raeco-rents-logo.png" alt="RAECO Rents LLC">
+                </div>
+                <div class="col s12 m10">
+                    <blockquote id="exp-attr">
+                        <h5><strong>RAECO Rents LLC</strong></h5>
+                    </blockquote>
+                    <p class="flow-text">
+                        This is going to be some text about my experience that I have had within IT at Lesman
+                        Instrument.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m2 center-align">
+                    <img class="circle responsive-img logoExp" src="Images/ivanhoe-logo.png" alt="Ivanhoe Country Club">
+                </div>
+                <div class="col s12 m10">
+                    <blockquote id="exp-attr">
+                        <h5><strong>Ivanhoe Golf Club</strong></h5>
+                    </blockquote>
+                    <p class="flow-text">
+                        This is going to be some text about my experience that I have had within IT at Lesman
+                        Instrument.
+                    </p>
+                </div>
+                <!-- Anchor for next section -->
+            </div>
+            <a id="tech"></a>
         </div>
         <!-- End Experience Section-->
 
         <!-- Begin Technology Section -->
         <div class="container red lighten-5">
-            <div class="card-panel red darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px; margin-bottom: 0px;">
+            <div class="card-panel red darken-2 white-text"
+                style="padding-top: 10px; padding-bottom: 10px; margin-bottom: 0px;">
                 <h3 class="center-align">Technology</h3>
             </div>
-            <div class="row center-align red lighten-4"><h5><strong>Programming Languages</strong></h5></div>
+            <div class="row center-align red lighten-4">
+                <h5><strong>Programming Languages</strong></h5>
+            </div>
             <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
                 <div class="col s12 m6 l4 center-align">
-                    <img src="Images/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
-                    <p>C# Language</p>
+                    <img src="Images/icons/html5/html5-original.svg" alt="HTML5" class="icon responsive-img">
+                    <p>HTML5</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/css3/css3-original.svg" alt="CSS3" class="icon responsive-img">
-                    <p>Cascading Style Sheets</p>
+                    <p>CSS3</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
+                    <p>C#</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/java/java-original.svg" alt="Java" class="icon responsive-img">
-                    <p>Java Language</p>
+                    <p>Java</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/javascript/javascript-original.svg" alt="JavaScript"
                         class="icon responsive-img">
-                    <p>JavaScript Language</p>
+                    <p>JavaScript</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/jquery/jquery-original.svg" alt="jQuery" class="icon responsive-img">
-                    <p>jQuery Language</p>
+                    <p>jQuery</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/python/python-original.svg" alt="Python" class="icon responsive-img">
-                    <p>Python Language</p>
+                    <p>Python</p>
                 </div>
             </div>
-            <div class="row center-align red lighten-4"><h5><strong>JavaScript Frameworks</strong></h5></div>
+            <div class="row center-align red lighten-4">
+                <h5><strong>JavaScript Frameworks</strong></h5>
+            </div>
             <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/nodejs/nodejs-original.svg" alt="Node.js" class="icon responsive-img">
@@ -207,31 +260,38 @@
                     <p>Express.js</p>
                 </div>
             </div>
-            <div class="row center-align red lighten-4"><h5><strong>CSS Frameworks</strong></h5></div>
+            <div class="row center-align red lighten-4">
+                <h5><strong>CSS Frameworks</strong></h5>
+            </div>
             <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework"
                         class="icon responsive-img">
-                    <p>Bootstrap CSS Framework</p>
+                    <p>Bootstrap CSS</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/materialize/materialize.png" alt="Materialize Framework"
                         class="icon responsive-img">
-                    <p>Materialize CSS Framework</p>
+                    <p>Materialize CSS</p>
                 </div>
             </div>
-            <div class="row center-align red lighten-4"><h5><strong>Other Frameworks</strong></h5></div>
+            <div class="row center-align red lighten-4">
+                <h5><strong>Other Frameworks</strong></h5>
+            </div>
             <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/dot-net/dot-net-original.svg" alt="Dot Net" class="icon responsive-img">
                     <p>.Net</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
-                    <img src="Images/icons/handlebars/handlebars-original.svg" alt="Handlebars" class="icon responsive-img">
+                    <img src="Images/icons/handlebars/handlebars-original.svg" alt="Handlebars"
+                        class="icon responsive-img">
                     <p>Handlebars</p>
                 </div>
             </div>
-            <div class="row center-align red lighten-4"><h5><strong>Other Technologies</strong></h5></div>
+            <div class="row center-align red lighten-4">
+                <h5><strong>Other Technologies</strong></h5>
+            </div>
             <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/git/git-original.svg" alt="Git Bash" class="icon responsive-img">
@@ -257,10 +317,10 @@
                 <h3 class="center-align">Education</h3>
             </div>
             <div class="row flow-text">
-                    <div class="col s6 offset-s3 m4">
-                            <img src="Images/miami-logo.png" alt="Miami Ohio Logo Logo" style="width: 100%;">
-                    </div>
-                    <div class="col s12 m8">
+                <div class="col s6 offset-s3 m4">
+                    <img src="Images/miami-logo.png" alt="Miami Ohio Logo Logo" style="width: 100%;">
+                </div>
+                <div class="col s12 m8">
                     <blockquote class="flow-text" id="edu-attr">
                         <strong>School:</strong> Miami University's Farmer School of Business
                     </blockquote>
@@ -283,14 +343,12 @@
                 <h3 class="center-align">Connect</h3>
             </div>
             <div class="row flow-text valign-wrapper">
-                <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
+                <div class="col s10 offset-s1" style="padding-top: 10px; padding-bottom: 10px;">
                     <img src="Images/github-logo.png" alt="Github Logo" class="logo">
-                </div>
-                <div class="col s4 left-align">
                     Github
-                </div>
-                <div class="col s4 left-align">
-                    <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
+                    <a href="https://github.com/delaclqm">
+                        <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
+                    </a>
                 </div>
             </div>
             <hr>
@@ -302,7 +360,9 @@
                     LinkedIn
                 </div>
                 <div class="col s4 left-align">
-                    <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
+                    <a href="https://www.linkedin.com/in/quaiddel">
+                        <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
+                    </a>
                 </div>
             </div>
             <hr>
@@ -314,19 +374,9 @@
                     Instagram
                 </div>
                 <div class="col s4 left-align">
-                    <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
-                </div>
-            </div>
-            <hr>
-            <div class="row flow-text valign-wrapper">
-                <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
-                    <img src="Images/twitter-logo.png" alt="Twitter Logo" class="logo">
-                </div>
-                <div class="col s4 left-align">
-                    Twitter
-                </div>
-                <div class="col s4 left-align">
-                    <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
+                    <a href="https://www.instagram.com/quaidthespade/?hl=en">
+                        <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -345,13 +395,10 @@
                     </p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
+                    <h5 class="white-text">My Projects</h5>
                     <ul>
                         <li>
                             <a class="grey-text text-lighten-3" href="https://github.com/delaclqm">GitHub</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/quaiddel/">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
