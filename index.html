@@ -5,7 +5,7 @@
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="Content/materialize.min.css" media="screen,projection" />
-    <link rel="icon" sizes="32x32" href="favicon.ico">
+    <link rel="icon" sizes="800x800" href="Images/Quaid-logo.gif">
     <meta name="theme-color" content="#2196f3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -15,12 +15,14 @@
         $(document).ready(function () {
             $('.sidenav').sidenav();
         });
-
-
     </script>
     <style>
-        blockquote {
+        #prof-attr {
             border-left: #0d47a1 5px solid;
+        }
+
+        #edu-attr {
+            border-left: #ffc107  5px solid;
         }
 
         img.logo {
@@ -31,6 +33,13 @@
         img.icon {
             max-height: 80px;
             max-width: 80px;
+        }
+
+        h5 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-block-end: 0%;
+            margin-block-start: 0%;
         }
     </style>
 </head>
@@ -43,7 +52,7 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
                 </a>
-                <img class="brand-logo" src="Images/Quaid-Logo-Square.png" alt="Quaid Logo" style="height: 100%;">
+                <img class="brand-logo" src="Images/Quaid-logo.gif" alt="Quaid Logo" style="height: 100%;">
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
@@ -74,7 +83,7 @@
         <li>
             <div class="user-view">
                 <a href="#user">
-                    <img class="circle" src="Images/Quaid-Logo-Square.png">
+                    <img class="circle" src="Images/Quaid-Logo.gif" alt="Quaid Logo">
                 </a>
                 <a href="#name">
                     <span class="black-text name">Quaid DeLacluyse</span>
@@ -118,15 +127,15 @@
             </div>
             <div class="row">
                 <div class="col s6 offset-s3 m4">
-                    <img src="Images/Quaid-Logo-Square.png" alt="Quaid Logo" style="width: 100%;">
+                    <img src="Images/Quaid-Logo.gif" alt="Quaid Logo" style="width: 100%;">
                 </div>
                 <div class="col s12 m8">
                     <h3>Quaid Michael DeLacluyse</h3>
-                    <blockquote class="flow-text">
+                    <blockquote class="flow-text" id="prof-attr">
                         <strong>Email:</strong> delaclqm@miamioh.edu</blockquote>
-                    <blockquote class="flow-text">
+                    <blockquote class="flow-text" id="prof-attr">
                         <strong>Cell:</strong> (224) 600-4622</blockquote>
-                    <blockquote class="flow-text">
+                    <blockquote class="flow-text" id="prof-attr">
                         <strong>Current Position:</strong> Business Intelligence Developer and Student
                     </blockquote>
                 </div>
@@ -156,15 +165,11 @@
 
         <!-- Begin Technology Section -->
         <div class="container red lighten-5">
-            <div class="card-panel red darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
+            <div class="card-panel red darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px; margin-bottom: 0px;">
                 <h3 class="center-align">Technology</h3>
             </div>
-            <div class="row flow-text">
-                <div class="col s12 m6 l4 center-align">
-                    <img src="Images/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework"
-                        class="icon responsive-img">
-                    <p>Bootstrap CSS Framework</p>
-                </div>
+            <div class="row center-align red lighten-4"><h5><strong>Programming Languages</strong></h5></div>
+            <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
                 <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/csharp/csharp-original.svg" alt="C Sharp" class="icon responsive-img">
                     <p>C# Language</p>
@@ -187,8 +192,58 @@
                     <p>jQuery Language</p>
                 </div>
                 <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/python/python-original.svg" alt="Python" class="icon responsive-img">
+                    <p>Python Language</p>
+                </div>
+            </div>
+            <div class="row center-align red lighten-4"><h5><strong>JavaScript Frameworks</strong></h5></div>
+            <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
+                <div class="col s12 m6 l4 center-align">
                     <img src="Images/icons/nodejs/nodejs-original.svg" alt="Node.js" class="icon responsive-img">
                     <p>Node.js</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/express/express-original.svg" alt="Express.js" class="icon responsive-img">
+                    <p>Express.js</p>
+                </div>
+            </div>
+            <div class="row center-align red lighten-4"><h5><strong>CSS Frameworks</strong></h5></div>
+            <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap Framework"
+                        class="icon responsive-img">
+                    <p>Bootstrap CSS Framework</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/materialize/materialize.png" alt="Materialize Framework"
+                        class="icon responsive-img">
+                    <p>Materialize CSS Framework</p>
+                </div>
+            </div>
+            <div class="row center-align red lighten-4"><h5><strong>Other Frameworks</strong></h5></div>
+            <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/dot-net/dot-net-original.svg" alt="Dot Net" class="icon responsive-img">
+                    <p>.Net</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/handlebars/handlebars-original.svg" alt="Handlebars" class="icon responsive-img">
+                    <p>Handlebars</p>
+                </div>
+            </div>
+            <div class="row center-align red lighten-4"><h5><strong>Other Technologies</strong></h5></div>
+            <div class="row flow-text" style="padding-bottom:10px; padding-top:10px;">
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/git/git-original.svg" alt="Git Bash" class="icon responsive-img">
+                    <p>Git Bash</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/github/github-original.svg" alt="GitHub" class="icon responsive-img">
+                    <p>GitHub</p>
+                </div>
+                <div class="col s12 m6 l4 center-align">
+                    <img src="Images/icons/gitlab/gitlab-original.svg" alt="GitLab" class="icon responsive-img">
+                    <p>GitLab</p>
                 </div>
             </div>
             <!-- Anchor for next section -->
@@ -202,13 +257,20 @@
                 <h3 class="center-align">Education</h3>
             </div>
             <div class="row flow-text">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis? Laudantium earum
-                    obcaecati autem architecto
-                    enim modi aut sunt, repellendus est inventore voluptatum aperiam, provident, non reprehenderit
-                    voluptates
-                    itaque at!
-                </p>
+                    <div class="col s6 offset-s3 m4">
+                            <img src="Images/miami-logo.png" alt="Miami Ohio Logo Logo" style="width: 100%;">
+                    </div>
+                    <div class="col s12 m8">
+                    <blockquote class="flow-text" id="edu-attr">
+                        <strong>School:</strong> Miami University's Farmer School of Business
+                    </blockquote>
+                    <blockquote class="flow-text" id="edu-attr">
+                        <strong>Majors:</strong> Information Systems & Marketing
+                    </blockquote>
+                    <blockquote class="flow-text" id="edu-attr">
+                        <strong>Minors:</strong> Computer Science
+                    </blockquote>
+                </div>
                 <!-- Anchor for next section -->
                 <a id="conn"></a>
             </div>
@@ -228,7 +290,7 @@
                     Github
                 </div>
                 <div class="col s4 left-align">
-                    <button class="btn waves-effect purple darken-2">Go to Profile</button>
+                    <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
                 </div>
             </div>
             <hr>
@@ -240,7 +302,7 @@
                     LinkedIn
                 </div>
                 <div class="col s4 left-align">
-                    <button class="btn waves-effect purple darken-2">Go to Profile</button>
+                    <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
                 </div>
             </div>
             <hr>
@@ -252,7 +314,7 @@
                     Instagram
                 </div>
                 <div class="col s4 left-align">
-                    <button class="btn waves-effect purple darken-2">Go to Profile</button>
+                    <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
                 </div>
             </div>
             <hr>
@@ -264,7 +326,7 @@
                     Twitter
                 </div>
                 <div class="col s4 left-align">
-                    <button class="btn waves-effect purple darken-2">Go to Profile</button>
+                    <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
                 </div>
             </div>
         </div>
@@ -286,7 +348,10 @@
                     <h5 class="white-text">Links</h5>
                     <ul>
                         <li>
-                            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                            <a class="grey-text text-lighten-3" href="https://github.com/delaclqm">GitHub</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/quaiddel/">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
@@ -307,10 +372,13 @@
         // Initialize the ScrollReveal
         let slideLeft = {
             distance: '150%',
+            duration: 1000,
             origin: 'right',
-            opacity: null
+            opacity: null,
+            mobile: false,
+            scale: 0.5,
+            viewFactor: 0
         };
-
         ScrollReveal().reveal('.container', slideLeft);
     </script>
 </body>
