@@ -2,6 +2,11 @@
 
 <html>
 
+<!-- TODO 
+* Finish the Activities and Interests
+* Modify the images of experience section to be 200x200
+-->
+
 <head>
     <title>Quaid Michael DeLacluyse</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -9,8 +14,8 @@
     <link rel="icon" sizes="800x800" href="mylogo.gif">
     <meta name="theme-color" content="#1976d2 ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="Scripts/scrollreveal.js"></script>
+    <script src="Scripts/jquery-1.12.4.min.js"></script>
     <script type="text/JavaScript">
         // Initialize the SideNav
         $(document).ready(function () {
@@ -22,30 +27,25 @@
             margin-top: 0%;
         }
 
-        #prof-attr {
+        .prof-attr {
             border-left: #0d47a1 5px solid;
         }
 
-        #edu-attr {
+        .edu-attr {
             border-left: #ffc107 5px solid;
         }
 
-        #exp-attr {
+        .exp-attr {
             border-left: #388e3c 5px solid;
         }
 
-        #list {
+        ul.list {
             padding-left: 40px;
         }
 
-        #list>li {
-            padding-left: 10px;
-            list-style-type: disc;
-        }
-
         img.logo {
-            height: 40px;
-            width: 40px;
+            height: 75px;
+            width: 75px;
         }
 
         img.icon {
@@ -167,11 +167,11 @@
                 </div>
                 <div class="col s12 m8">
                     <h3>Quaid Michael DeLacluyse</h3>
-                    <blockquote class="flow-text" id="prof-attr">
+                    <blockquote class="flow-text prof-attr">
                         <strong>Email:</strong> delaclqm@miamioh.edu</blockquote>
-                    <blockquote class="flow-text" id="prof-attr">
+                    <blockquote class="flow-text prof-attr">
                         <strong>Cell:</strong> (224) 600-4622</blockquote>
-                    <blockquote class="flow-text" id="prof-attr">
+                    <blockquote class="flow-text prof-attr">
                         <strong>Current Position:</strong> Business Intelligence Developer and Student
                     </blockquote>
                 </div>
@@ -191,15 +191,19 @@
                     <img class="circle responsive-img" src="Images/raeco-rents-logo.png" alt="RAECO Rents LLC">
                 </div>
                 <div class="col s12 m10">
-                    <blockquote id="exp-attr">
+                    <blockquote class="exp-attr">
                         <h4 class="exp"><strong>Information Technology Intern</strong></h4>
                         <h5 class="exp">RAECO Rents LLC</h5>
                         <h5 class="exp">May 2018 – Present</h5>
                     </blockquote>
-                    <ul class="flow-text" id="list">
-                        <li>Developed and launched a cloud-based intranet platform to replace an antiquated on-premise system to increase the portability, accessibility, and security of sensitive corporate resources</li>
-                        <li>Implemented workflow automation to enhance internal controls ensuring decreased opportunity costs</li>
-                        <li>Introduces dashboards to track KPIs and automate sales & tax reporting that yield increased operational efficiencies</li>
+                    <ul class="flow-text list">
+                        <li style="padding-left: 10px;list-style-type: disc;">Developed and launched a cloud-based
+                            intranet platform to replace an antiquated on-premise system to increase the portability,
+                            accessibility, and security of sensitive corporate resources</li>
+                        <li style="padding-left: 10px;list-style-type: disc;">Implemented workflow automation to enhance
+                            internal controls ensuring decreased opportunity costs</li>
+                        <li style="padding-left: 10px;list-style-type: disc;">Introduces dashboards to track KPIs and
+                            automate sales & tax reporting that yield increased operational efficiencies</li>
                     </ul>
                 </div>
             </div>
@@ -208,13 +212,13 @@
                     <img class="circle responsive-img" src="Images/sam-logo.png" alt="Sigma Alpha Mu">
                 </div>
                 <div class="col s12 m10">
-                    <blockquote id="exp-attr">
+                    <blockquote class="exp-attr">
                         <h4 class="exp"><strong>Professional Development Chair</strong></h4>
                         <h5 class="exp">Sigma Alpha Mu (Mu Psi Chapter)</h5>
                         <h5 class="exp">Jan 2019 – Present</h5>
                     </blockquote>
-                    <ul class="flow-text" id="list">
-                        <li>TODO</li>
+                    <ul class="flow-text list">
+                        <li style="padding-left: 10px;list-style-type: disc;">TODO</li>
                     </ul>
                 </div>
             </div>
@@ -223,15 +227,18 @@
                     <img class="circle responsive-img" src="Images/sam-logo.png" alt="Sigma Alpha Mu">
                 </div>
                 <div class="col s12 m10">
-                    <blockquote id="exp-attr">
+                    <blockquote class="exp-attr">
                         <h4 class="exp"><strong>Recruitment Chair</strong></h4>
                         <h5 class="exp">Sigma Alpha Mu (Mu Psi Chapter)</h5>
                         <h5 class="exp">Jan 2018 – Jan 2019</h5>
                     </blockquote>
-                    <ul class="flow-text" id="list">
-                        <li>Implemented a new communication strategy to efficiently reach over 500 prospective members</li>
-                        <li>Overhauled recruitment tactics resulting in a 50% increase in number of prospective members over Fall of 2017</li>
-                        <li>Directed a committee of 30 people to broaden on-campus influence</li>
+                    <ul class="flow-text list">
+                        <li style="padding-left: 10px;list-style-type: disc;">Implemented a new communication strategy
+                            to efficiently reach over 500 prospective members</li>
+                        <li style="padding-left: 10px;list-style-type: disc;">Overhauled recruitment tactics resulting
+                            in a 50% increase in number of prospective members over Fall of 2017</li>
+                        <li style="padding-left: 10px;list-style-type: disc;">Directed a committee of 30 people to
+                            broaden on-campus influence</li>
                     </ul>
                 </div>
             </div>
@@ -240,13 +247,15 @@
                     <img class="circle responsive-img" src="Images/miami-logo.png" alt="Miami University">
                 </div>
                 <div class="col s12 m10">
-                    <blockquote id="exp-attr">
+                    <blockquote class="exp-attr">
                         <h4 class="exp"><strong>Undergraduate Teaching Assistant</strong></h4>
                         <h5 class="exp">Farmer School of Business</h5>
                         <h5 class="exp">Jan 2018 – May 2018</h5>
                     </blockquote>
-                    <ul class="flow-text" id="list">
-                        <li>Mentored 20 students enrolled in the First-Year Integrated Core client challenge by emphasizing effective team management, goal setting, and cross-cultural communication skills</li>
+                    <ul class="flow-text list">
+                        <li style="padding-left: 10px;list-style-type: disc;">Mentored 20 students enrolled in the
+                            First-Year Integrated Core client challenge by emphasizing effective team management, goal
+                            setting, and cross-cultural communication skills</li>
                     </ul>
                 </div>
             </div>
@@ -255,14 +264,16 @@
                     <img class="circle responsive-img" src="Images/lesman-logo.png" alt="Lesman Instrument Company">
                 </div>
                 <div class="col s12 m10">
-                    <blockquote id="exp-attr">
+                    <blockquote class="exp-attr">
                         <h4 class="exp"><strong>Digital Marketing Intern</strong></h4>
                         <h5 class="exp">Lesman Instrument Company</h5>
                         <h5 class="exp">May 2017 – Sep 2017</h5>
                     </blockquote>
-                    <ul class="flow-text" id="list">
-                        <li>Formulated the initial steps for transitioning from a template-based website to a dynamic, cloud-based solution</li>
-                        <li>Boosted sales by 10% by expanding the product line through third-party ecommerce websites such as Amazon and eBay</li>
+                    <ul class="flow-text list">
+                        <li style="padding-left: 10px;list-style-type: disc;">Formulated the initial steps for
+                            transitioning from a template-based website to a dynamic, cloud-based solution</li>
+                        <li style="padding-left: 10px;list-style-type: disc;">Boosted sales by 10% by expanding the
+                            product line through third-party ecommerce websites such as Amazon and eBay</li>
                     </ul>
                 </div>
             </div>
@@ -271,13 +282,14 @@
                     <img class="circle responsive-img" src="Images/ivanhoe-logo.png" alt="Ivanhoe Country Club">
                 </div>
                 <div class="col s12 m10">
-                    <blockquote id="exp-attr">
+                    <blockquote class="exp-attr">
                         <h4 class="exp"><strong>Honors Caddie</strong></h4>
                         <h5 class="exp">Ivanhoe Golf Club</h5>
                         <h5 class="exp">Mar 2012 – Sep 2017</h5>
                     </blockquote>
-                    <ul class="flow-text" id="list">
-                        <li>Developed strong business connections through networking by caddying 500+ rounds since the age of 14</li>
+                    <ul class="flow-text list">
+                        <li style="padding-left: 10px;list-style-type: disc;">Developed strong business connections
+                            through networking by caddying 500+ rounds since the age of 14</li>
                     </ul>
                 </div>
                 <!-- Anchor for next section -->
@@ -406,7 +418,8 @@
                     <p>PowerBI</p>
                 </div>
                 <div class="col s6 m6 l4">
-                    <img src="Images/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio" class="icon responsive-img">
+                    <img src="Images/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio"
+                        class="icon responsive-img">
                     <p>Visual Studio</p>
                 </div>
                 <div class="col s6 m6 l4">
@@ -414,7 +427,8 @@
                     <p>Microsoft Office</p>
                 </div>
                 <div class="col s6 m6 l4">
-                    <img src="Images/icons/google/google-logo.png" alt="Google Application Suite" class="icon responsive-img">
+                    <img src="Images/icons/google/google-logo.png" alt="Google Application Suite"
+                        class="icon responsive-img">
                     <p>GSuite</p>
                 </div>
                 <div class="col s6 m6 l4">
@@ -422,7 +436,8 @@
                     <p>Photoshop</p>
                 </div>
                 <div class="col s6 m6 l4">
-                    <img src="Images/icons/microsoftcrm/crm-logo.png" alt="Microsoft Dynamics CRM" class="icon responsive-img">
+                    <img src="Images/icons/microsoftcrm/crm-logo.png" alt="Microsoft Dynamics CRM"
+                        class="icon responsive-img">
                     <p>Microsoft Dynamics CRM</p>
                 </div>
                 <div class="col s6 m6 l4">
@@ -446,25 +461,34 @@
                     <img src="Images/miami-logo.png" alt="Miami Ohio Logo Logo" style="width: 100%;">
                 </div>
                 <div class="col s12 m8">
-                    <blockquote class="flow-text" id="edu-attr">
+                    <blockquote class="flow-text edu-attr">
                         <strong>School:</strong> Miami University's Farmer School of Business
                     </blockquote>
-                    <blockquote class="flow-text" id="edu-attr">
+                    <blockquote class="flow-text edu-attr">
                         <strong>Majors:</strong> Information Systems & Marketing
                     </blockquote>
-                    <blockquote class="flow-text" id="edu-attr">
+                    <blockquote class="flow-text edu-attr">
                         <strong>Minors:</strong> Computer Science
                     </blockquote>
-                    <blockquote class="flow-text" id="edu-attr">
+                    <blockquote class="flow-text edu-attr">
                         <strong>Cumulative GPA:</strong> 3.84 / 4.00
                     </blockquote>
-                    <blockquote class="flow-text" id="edu-attr">
+                    <blockquote class="flow-text edu-attr">
                         <strong>Study Abroad: </strong> Marketing Innovation Study Abroad
                     </blockquote>
-                    <ul class="flow-text" id="list">
-                        <li>Assisted in the development of focus groups for SAP, Skoda Automotive, BMW Motorcycle, and Copenhagen Capacity</li>
-                        <li>Identified key customer insights for IKEA to create marketing strategies targeting customers in urban settings</li>
-                        <li>Examined and adapted Spacebase’s business model to identify competitive advantages applicable to international markets</li>
+                    <ul class="flow-text list">
+                        <li style="padding-left: 10px;list-style-type: disc;">
+                            Assisted in the development of focus groups for SAP, Skoda Automotive, BMW Motorcycle, and
+                            Copenhagen Capacity
+                        </li>
+                        <li style="padding-left: 10px;list-style-type: disc;">
+                            Identified key customer insights for IKEA to create marketing strategies targeting customers
+                            in urban settings
+                        </li>
+                        <li style="padding-left: 10px;list-style-type: disc;">
+                            Examined and adapted Spacebase’s business model to identify competitive advantages
+                            applicable to international markets
+                        </li>
                     </ul>
                 </div>
                 <!-- Anchor for next section -->
@@ -475,11 +499,45 @@
 
         <!-- Begin Activities & Interests Section -->
         <div class="container orange lighten-5">
-            <div class="card-panel orange darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
+            <div class="card-panel orange darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px; margin-bottom: 0px;">
                 <h3 class="center-align">Activities & Interests</h3>
             </div>
+            <div class="row center-align orange lighten-4">
+                <h5><strong>Golf</strong></h5>
+            </div>
             <div class="row flow-text">
-                Here will be some content about my Activities and Interests
+                <div class="col s10 offset-s1">
+                    Here will be some content about my Activities and Interests
+                </div>
+            </div>
+            <div class="row center-align orange lighten-4">
+                <h5><strong>Snow Skiing</strong></h5>
+            </div>
+            <div class="row flow-text">
+                <div class="col s10 offset-s1">
+                    Here will be some content about my Activities and Interests
+                </div>
+            </div>
+            <div class="row center-align orange lighten-4">
+                <h5><strong>Montain Biking</strong></h5>
+            </div>
+            <div class="row flow-text">
+                <div class="col s10 offset-s1">
+                    Here will be some content about my Activities and Interests
+                </div>
+            </div>
+            <div class="row center-align orange lighten-4">
+                <h5><strong>Other Interests</strong></h5>
+            </div>
+            <div class="row flow-text">
+                <div class="col s10 offset-s1">
+                    <ul class="flow-text">
+                        <li style="padding-left: 10px;list-style-type: disc;">The Automotive Industry (Super Cars)</li>
+                        <li style="padding-left: 10px;list-style-type: disc;">Block-Chain Applications</li>
+                        <li style="padding-left: 10px;list-style-type: disc;">The Technology Industry (specifically smartphones, personal computers, and wearables)</li>
+                        <li style="padding-left: 10px;list-style-type: disc;">The Office (The TV Show)</li>
+                    </ul>
+                </div>
                 <!-- Anchor for next section -->
                 <a id="conn"></a>
             </div>
@@ -488,43 +546,38 @@
 
         <!-- Begin Connect Section -->
         <div class="container purple lighten-5">
-            <div class="card-panel purple darken-2 white-text" style="padding-top: 10px; padding-bottom: 10px;">
+            <div class="card-panel purple darken-2 white-text">
                 <h3 class="center-align">Connect</h3>
             </div>
-            <div class="row flow-text valign-wrapper">
-                <div class="col s10 offset-s1" style="padding-top: 10px; padding-bottom: 10px;">
+            <div class="row flow-text">
+                <div class="col s10 offset-s1 valign-wrapper center-align ">
                     <img src="Images/github-logo.png" alt="Github Logo" class="logo">
-                    Github
+                    <p style="padding-right: 10px; padding-left: 10px;">GitHub</p>
                     <a href="https://github.com/delaclqm">
-                        <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
+                        <button class="btn btn-large waves-effect waves-light purple darken-2">Go to Profile</button>
                     </a>
                 </div>
             </div>
             <hr>
-            <div class="row flow-text valign-wrapper">
-                <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
+            <div class="row flow-text">
+                <div class="col s7 offset-s1 center-align valign-wrapper">
                     <img src="Images/linkedin-logo.png" alt="LinkedIn Logo" class="logo">
-                </div>
-                <div class="col s4 left-align">
-                    LinkedIn
-                </div>
-                <div class="col s4 left-align">
-                    <a href="https://www.linkedin.com/in/quaiddel">
-                        <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
-                    </a>
+                    <p style="padding-right: 10px; padding-left: 10px;">LinkedIn</p>
+                    <div class="col s3">
+                        <a href="https://www.linkedin.com/in/quaiddel">
+                            <button class="btn btn-large waves-effect waves-light purple darken-2">Go to
+                                Profile</button>
+                        </a>
+                    </div>
                 </div>
             </div>
             <hr>
-            <div class="row flow-text valign-wrapper">
-                <div class="col s4 right-align" style="padding-top: 10px; padding-bottom: 10px;">
+            <div class="row flow-text">
+                <div class="col s10 offset-s1 center-align valign-wrapper">
                     <img src="Images/instagram-logo.png" alt="Instagram Logo" class="logo">
-                </div>
-                <div class="col s4 left-align">
-                    Instagram
-                </div>
-                <div class="col s4 left-align">
+                    <p style="padding-right: 10px; padding-left: 10px;">Instagram</p>
                     <a href="https://www.instagram.com/quaidthespade/?hl=en">
-                        <button class="btn waves-effect waves-light purple darken-2">Go to Profile</button>
+                        <button class="btn btn-large waves-effect waves-light purple darken-2">Go to Profile</button>
                     </a>
                 </div>
             </div>
