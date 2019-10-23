@@ -4,8 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Imports for @Angular/Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 // Application Components
 import { AppComponent } from './app.component';
@@ -15,6 +17,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ConnectComponent } from './connect/connect.component';
+import { FooterBarComponent } from './footer-bar/footer-bar.component';
+import { SidenavComponent } from './nav-bar/sidenav/sidenav.component';
 
 // Application Routing
 const appRoutes: Routes = [
@@ -53,7 +57,9 @@ const appRoutes: Routes = [
     ProfileComponent,
     ExperienceComponent,
     ProjectsComponent,
-    ConnectComponent
+    ConnectComponent,
+    FooterBarComponent,
+    SidenavComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -62,8 +68,10 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     BrowserAnimationsModule,
+    MatIconModule,
     MatToolbarModule,
     MatTabsModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

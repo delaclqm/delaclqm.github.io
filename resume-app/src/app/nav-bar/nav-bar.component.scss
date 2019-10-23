@@ -1,0 +1,15 @@
+.title-bar {
+    z-index: 1;
+    position: relative;
+}
+
+.link-bar {
+    z-index: 0;
+    position: -webkit-sticky; 
+    position: sticky; 
+    top: 0;
+
+    .tab-icon {
+        margin-right: 8px;
+    }
+}

@@ -1,6 +1,13 @@
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+body {
+    margin: 0px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
 
-* {
-    margin: 0;
-    padding: 0;
+.container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
 }
