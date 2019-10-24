@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // Imports for @Angular/Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -8,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 // Application Components
 import { AppComponent } from './app.component';
@@ -18,7 +20,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ConnectComponent } from './connect/connect.component';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
-import { SidenavComponent } from './nav-bar/sidenav/sidenav.component';
+import { SidenavContentComponent } from './sidenav-content/sidenav-content.component';
 
 // Application Routing
 const appRoutes: Routes = [
@@ -59,7 +61,7 @@ const appRoutes: Routes = [
     ProjectsComponent,
     ConnectComponent,
     FooterBarComponent,
-    SidenavComponent
+    SidenavContentComponent,
   ],
   imports: [
     RouterModule.forRoot(
@@ -68,10 +70,12 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     MatIconModule,
     MatToolbarModule,
     MatTabsModule,
     MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

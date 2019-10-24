@@ -1,18 +1,11 @@
-<mat-toolbar class="title-bar mat-elevation-z2" color="primary">
-    <mat-icon>menu</mat-icon>
-    <span>Quaid M. DeLacluyse</span>
+<mat-toolbar fxLayout="row" fxLayoutAlign="center center" class="title-bar mat-elevation-z2" color="primary">
+    <mat-icon fxFlex fxHide.gt-xs (click)="onToggleSidenav()">menu</mat-icon>
+    <span fxFlex.xs>Quaid M. DeLacluyse</span>
+    <span fxFlex fxHide.gt-xs></span>
 </mat-toolbar>
 
-<app-sidenav [links]="navLinks"></app-sidenav>
-
-<nav mat-tab-nav-bar *ngIf="!mobileQuery.matches"
-    class="link-bar" 
-    backgroundColor="primary" 
-    mat-align-tabs="center">
-    <a mat-tab-link
-        *ngFor="let link of navLinks"
-        [routerLink]="link.path"
-        routerLinkActive #rla="routerLinkActive"
+<nav mat-tab-nav-bar fxShow fxHide.xs class="link-bar" backgroundColor="primary" mat-align-tabs="center">
+    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive"
         [active]="rla.isActive">
         <mat-icon class="tab-icon">{{ link.icon }}</mat-icon>
         {{ link.label }}

@@ -1,7 +1,13 @@
-<div class="main">
-    <app-nav-bar></app-nav-bar>
-    <div class="container">
-        <router-outlet></router-outlet>
-    </div>
-    <app-footer-bar></app-footer-bar>
-</div>
+<mat-sidenav-container>
+    <mat-sidenav mode="over" #sidenav>
+        <app-sidenav-content (sidenavClose)="sidenav.toggle()"></app-sidenav-content>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <app-nav-bar (sidenavToggle)="sidenav.toggle()" #navbar></app-nav-bar>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+        <app-footer-bar></app-footer-bar>
+    </mat-sidenav-content>
+</mat-sidenav-container>
