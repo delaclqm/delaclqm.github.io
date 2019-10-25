@@ -10,6 +10,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 // Application Components
 import { AppComponent } from './app.component';
@@ -21,6 +23,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ConnectComponent } from './connect/connect.component';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { SidenavContentComponent } from './sidenav-content/sidenav-content.component';
+import { DinosaurGameComponent } from './dinosaur-game/dinosaur-game.component';
+import { ExperienceAccordionComponent } from './experience/experience-accordion/experience-accordion.component';
 
 // Application Routing
 const appRoutes: Routes = [
@@ -62,6 +66,8 @@ const appRoutes: Routes = [
     ConnectComponent,
     FooterBarComponent,
     SidenavContentComponent,
+    DinosaurGameComponent,
+    ExperienceAccordionComponent,
   ],
   imports: [
     RouterModule.forRoot(
@@ -75,7 +81,9 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatTabsModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

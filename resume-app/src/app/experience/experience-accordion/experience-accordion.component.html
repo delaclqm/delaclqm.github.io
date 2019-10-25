@@ -1,0 +1,23 @@
+<mat-accordion class="margin-1em">
+    <mat-expansion-panel *ngFor="let section of accordionPanelContents" hideToggle>
+
+        <mat-expansion-panel-header fxFlexLayout="row" fxLayoutAlign="center center">
+            <mat-panel-title fxFlexAlign="center" fxFlex="100%">
+                {{ section.title }}
+            </mat-panel-title>
+            <mat-panel-description fxFlex>
+                <mat-icon>{{ section.icon }}</mat-icon>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div fxFlexLayout="column" fxLayoutGap="3.33%" fxLayoutAlign="center center">
+            <mat-card fxFlex.gt-sm="30%" fxFlex.xs="50%" *ngFor="let tech of section.technologies" class="primary-color">
+                <mat-card-title>
+                    {{ tech.name }}
+                </mat-card-title>
+                <img mat-card-image src="{{ tech.logo }}" alt="{{ tech.name }}"/>
+            </mat-card>
+        </div>
+
+    </mat-expansion-panel>
+</mat-accordion>
