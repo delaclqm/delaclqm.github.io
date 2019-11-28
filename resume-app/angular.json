@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/flexboxgrid/css/flexboxgrid.min.css",
+              "src/grid.min.css",
               "src/dark-theme.scss",
               "src/styles.scss"
             ],

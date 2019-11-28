@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { LayoutModule } from '@angular/cdk/layout';
 
 // Imports for @Angular/Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,19 +12,18 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatButtonModule } from '@angular/material/button';
 
 // Application Components
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ConnectComponent } from './connect/connect.component';
-import { FooterBarComponent } from './footer-bar/footer-bar.component';
-import { SidenavContentComponent } from './sidenav-content/sidenav-content.component';
 import { DinosaurGameComponent } from './dinosaur-game/dinosaur-game.component';
 import { ExperienceAccordionComponent } from './experience/experience-accordion/experience-accordion.component';
+import { NavComponent } from './nav/nav.component';
 
 // Application Routing
 const appRoutes: Routes = [
@@ -59,15 +58,13 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    NavBarComponent,
     ProfileComponent,
     ExperienceComponent,
     ProjectsComponent,
     ConnectComponent,
-    FooterBarComponent,
-    SidenavContentComponent,
     DinosaurGameComponent,
     ExperienceAccordionComponent,
+    NavComponent,
   ],
   imports: [
     RouterModule.forRoot(
@@ -76,7 +73,7 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
+    LayoutModule,
     MatIconModule,
     MatToolbarModule,
     MatTabsModule,
@@ -84,6 +81,7 @@ const appRoutes: Routes = [
     MatListModule,
     MatCardModule,
     MatExpansionModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

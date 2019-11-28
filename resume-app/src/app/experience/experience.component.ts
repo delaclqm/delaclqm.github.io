@@ -28,7 +28,6 @@ export class ExperienceComponent implements OnInit {
     ]
 
   }
-
 }
 
 interface Technolgies {

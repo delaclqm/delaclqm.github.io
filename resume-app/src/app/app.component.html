@@ -1,13 +1,11 @@
-<mat-sidenav-container>
-    <mat-sidenav mode="over" #sidenav>
-        <app-sidenav-content (sidenavClose)="sidenav.toggle()"></app-sidenav-content>
+<mat-sidenav-container autosize>
+    <mat-sidenav mode="side" disableClose="true" opened="true" fixedInViewport>
+        <app-nav></app-nav>
     </mat-sidenav>
 
     <mat-sidenav-content>
-        <app-nav-bar (sidenavToggle)="sidenav.toggle()" #navbar></app-nav-bar>
         <div class="container">
             <router-outlet></router-outlet>
         </div>
-        <app-footer-bar></app-footer-bar>
     </mat-sidenav-content>
 </mat-sidenav-container>

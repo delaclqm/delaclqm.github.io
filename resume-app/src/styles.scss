@@ -7,22 +7,31 @@ body {
 
 .container {
     position: relative;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
     box-sizing: border-box;
     max-width: 1500px;
-    margin: 0 auto;
 }
 
 //=============== Utility Classes
-.no-margin {
-    margin: 0 !important;
+.header {
+    margin: 0.5em 0 0.25em 0;
+    font-size: 3em;
 }
 
-.margin-1em {
-    margin: 1em;
+.subheading {
+    font-size: 1.5em;
 }
 
-.margin-1em-top {
-    margin-top: 1em;
+//=============== Color Classes
+.primary {
+    background: rgba(0,18,255,1) !important,
+}
+
+.gradient {
+    background: linear-gradient(125deg, rgba(0,18,255,1) 0%, rgba(213,1,254,1) 130%) !important;
+}
+
+.gradient-2 {
+    background: linear-gradient(125deg, rgba(0,18,255,1) 0%, rgba(213,1,254,1) 110%) !important;
 }
