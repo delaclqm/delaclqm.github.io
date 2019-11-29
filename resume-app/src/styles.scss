@@ -1,14 +1,18 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     width: 100%;
     margin: 0px;
-    background-color: #2b2b2b;
+    background-color: #303030;
     color: #ffffff;
 }
 
 .container {
     position: relative;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     box-sizing: border-box;
     max-width: 1500px;
 }
@@ -16,22 +20,36 @@ body {
 //=============== Utility Classes
 .header {
     margin: 0.5em 0 0.25em 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .subheading {
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
-//=============== Color Classes
+//=============== Text Colors
+.blended-text {
+    color: #616161 !important;
+}
+
+//=============== Colors
+$primary-color: rgb(145, 152, 255);
+$start-gradient: rgba(0,18,255,1);
+$end-gradient: rgba(213,1,254,1);
+
 .primary {
-    background: rgba(0,18,255,1) !important,
+    background: $primary-color !important;
+    color: #ffffff !important;
+}
+
+.primary-text {
+    color: $primary-color !important;
 }
 
 .gradient {
-    background: linear-gradient(125deg, rgba(0,18,255,1) 0%, rgba(213,1,254,1) 130%) !important;
+    background: linear-gradient(125deg, $start-gradient 0%, $end-gradient 130%) !important;
 }
 
 .gradient-2 {
-    background: linear-gradient(125deg, rgba(0,18,255,1) 0%, rgba(213,1,254,1) 110%) !important;
+    background: linear-gradient(125deg, $start-gradient 0%, $end-gradient 110%) !important;
 }
